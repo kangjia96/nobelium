@@ -37,19 +37,19 @@ export default function Post (props) {
           'w-full flex mt-7 items-start text-gray-500 dark:text-gray-400',
           { 'max-w-2xl px-4': !fullWidth }
         )}>
-          <div className="flex mb-4">
-            <a href={BLOG.socialLink || '#'} className="flex">
-              <Image
-                alt={BLOG.author}
-                width={24}
-                height={24}
-                src={`https://gravatar.com/avatar/${emailHash}`}
-                className="rounded-full"
-              />
-              <p className="ml-2 md:block">{BLOG.author}</p>
-            </a>
-            <span className="block">&nbsp;/&nbsp;</span>
-          </div>
+          {/*<div className="flex mb-4">*/}
+          {/*  <a href={BLOG.socialLink || '#'} className="flex">*/}
+          {/*    <Image*/}
+          {/*      alt={BLOG.author}*/}
+          {/*      width={24}*/}
+          {/*      height={24}*/}
+          {/*      src={`https://gravatar.com/avatar/${emailHash}`}*/}
+          {/*      className="rounded-full"*/}
+          {/*    />*/}
+          {/*    <p className="ml-2 md:block">{BLOG.author}</p>*/}
+          {/*  </a>*/}
+          {/*  <span className="block">&nbsp;/&nbsp;</span>*/}
+          {/*</div>*/}
           <div className="mr-2 mb-4 md:ml-0">
             <FormattedDate date={post.date} />
           </div>
